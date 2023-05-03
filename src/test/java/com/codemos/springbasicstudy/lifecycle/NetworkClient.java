@@ -1,12 +1,13 @@
 package com.codemos.springbasicstudy.lifecycle;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+
 public class NetworkClient {
 	private String url;
 	
 	public NetworkClient() {
 		System.out.println("Constructor called, url = " + url);
-		connect();
-		call("Initialization connection message");
 	}
 	
 	public void setUrl(String url) {
@@ -25,5 +26,18 @@ public class NetworkClient {
 	// Call this method when service closed
 	public void disconnect() {
 		System.out.println("close: " + url);
+	}
+	
+	@PostConstruct
+	public void init() {
+		System.out.println("NetworkClient.afterPropertiesSet");
+		connect();
+		call("Initialization connection message");
+	}
+	
+	@PreDestroy
+	public void close() {
+		System.out.println("NetworkClient.destroy");
+		disconnect();
 	}
 }
