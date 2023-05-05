@@ -23,16 +23,12 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'jakarta.inject:jakarta.inject-api:2.0.1'
-
-    /* lombok library start */
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
-    /* lombok library end */
-
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-
 }
 
 tasks.named('test') {
