@@ -1,4 +1,4 @@
-# Spring Core Principles - Basic
+[# Spring Core Principles - Basic
 
 This repository contains code samples and notes for the "[Spring Core Principles - Basic](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81-%ED%95%B5%EC%8B%AC-%EC%9B%90%EB%A6%AC-%EA%B8%B0%EB%B3%B8%ED%8E%B8)" course on Inflearn by Kim Young-han.
 
@@ -32,7 +32,7 @@ To run the sample code in this repository, follow these steps:
 
 1. Clone the repository to your local machine using Git: `git clone https://github.com/jwkwon0817/spring-basic-study.git`
 2. Open the project in your preferred IDE.
-3. Build the project using Maven.
+3. Build the project using Gradle.
 4. Run the sample code in the IDE or from the command line.
 
 ## Acknowledgements
@@ -43,3 +43,4 @@ To run the sample code in this repository, follow these steps:
 ## License
 
 The code samples in this repository are licensed under the MIT License. See [LICENSE](LICENSE) for details.
+]()
